@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@project/components/*": [
+        "../../packages/components/*"
+      ],
+      "zitejs/auth": [
+        "./src/portable/auth.ts"
+      ],
+      "zitejs/caller": [
+        "./src/portable/caller.ts"
+      ],
+      "zitejs/api": [
+        "./.zite/api.ts"
+      ],
+      "zitejs/backend": [
+        "../../server/endpoint.ts"
+      ],
+      "zitejs/db": [
+        "../../.zite/db.ts"
+      ],
+      "zitejs/runtime": [
+        "../../server/runtime.ts"
+      ]
+    },
+    "module": "ESNext",
+    "moduleResolution": "bundler"
+  }
+}
