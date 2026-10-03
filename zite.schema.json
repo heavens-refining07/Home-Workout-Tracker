@@ -1,0 +1,1855 @@
+{
+  "tables": [
+    {
+      "id": "tncfPHJ7Vps",
+      "sdkName": "profiles",
+      "name": "Profiles",
+      "primaryFieldId": "ff1YBmLkQ85",
+      "fields": [
+        {
+          "id": "ff1YBmLkQ85",
+          "sdkName": "displayName",
+          "definition": {
+            "name": "Display Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fvXTMG3FGtx",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": true
+            }
+          }
+        },
+        {
+          "id": "fkskU44HcH4",
+          "sdkName": "age",
+          "definition": {
+            "name": "Age",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f6DzAP388ao",
+          "sdkName": "gender",
+          "definition": {
+            "name": "Gender",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "9s3x",
+                  "label": "Male",
+                  "color": "purple"
+                },
+                {
+                  "value": "pnSf",
+                  "label": "Female",
+                  "color": "orange"
+                },
+                {
+                  "value": "dHyc",
+                  "label": "Other",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f4xgTihHLDF",
+          "sdkName": "height",
+          "definition": {
+            "name": "Height",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fuaaYfz445U",
+          "sdkName": "weight",
+          "definition": {
+            "name": "Weight",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fsTJF3g2BRr",
+          "sdkName": "fitnessLevel",
+          "definition": {
+            "name": "Fitness Level",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "8NYY",
+                  "label": "Beginner",
+                  "color": "green"
+                },
+                {
+                  "value": "cLfk",
+                  "label": "Intermediate",
+                  "color": "yellow"
+                },
+                {
+                  "value": "iqFk",
+                  "label": "Advanced",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fntQ2Ej9Ttk",
+          "sdkName": "fitnessGoal",
+          "definition": {
+            "name": "Fitness Goal",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "u9Wc",
+                  "label": "Weight Loss",
+                  "color": "purple"
+                },
+                {
+                  "value": "7gBe",
+                  "label": "Muscle Gain",
+                  "color": "orange"
+                },
+                {
+                  "value": "fBRt",
+                  "label": "Strength",
+                  "color": "blue"
+                },
+                {
+                  "value": "6b9L",
+                  "label": "Endurance",
+                  "color": "gray"
+                },
+                {
+                  "value": "rDih",
+                  "label": "Flexibility",
+                  "color": "red"
+                },
+                {
+                  "value": "rcDp",
+                  "label": "General Fitness",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f13wQc5YYhK",
+          "sdkName": "role",
+          "definition": {
+            "name": "Role",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "aT78",
+                  "label": "User",
+                  "color": "purple"
+                },
+                {
+                  "value": "qDpn",
+                  "label": "Admin",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fft5oeyoaYa",
+          "sdkName": "avatar",
+          "definition": {
+            "name": "Avatar",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "frJYJDDyLfe",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tb6XCLZrJ36",
+      "sdkName": "exercises",
+      "name": "Exercises",
+      "primaryFieldId": "fwXuePq1Q99",
+      "fields": [
+        {
+          "id": "fwXuePq1Q99",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fx6hLpYvxXs",
+          "sdkName": "category",
+          "definition": {
+            "name": "Category",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "uPMR",
+                  "label": "Chest",
+                  "color": "red"
+                },
+                {
+                  "value": "43Az",
+                  "label": "Back",
+                  "color": "blue"
+                },
+                {
+                  "value": "fJVo",
+                  "label": "Shoulders",
+                  "color": "orange"
+                },
+                {
+                  "value": "75rP",
+                  "label": "Arms",
+                  "color": "purple"
+                },
+                {
+                  "value": "hQeF",
+                  "label": "Legs",
+                  "color": "green"
+                },
+                {
+                  "value": "8yoz",
+                  "label": "Core",
+                  "color": "yellow"
+                },
+                {
+                  "value": "g9X7",
+                  "label": "Cardio",
+                  "color": "pink"
+                },
+                {
+                  "value": "q5Gh",
+                  "label": "Full Body",
+                  "color": "indigo"
+                },
+                {
+                  "value": "2Yto",
+                  "label": "Yoga",
+                  "color": "teal"
+                },
+                {
+                  "value": "76BU",
+                  "label": "Stretching",
+                  "color": "lime"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f5im5sxKt56",
+          "sdkName": "muscleGroup",
+          "definition": {
+            "name": "Muscle Group",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "pb4o",
+                  "label": "Chest",
+                  "color": "purple"
+                },
+                {
+                  "value": "cjZ4",
+                  "label": "Upper Back",
+                  "color": "orange"
+                },
+                {
+                  "value": "2fit",
+                  "label": "Lower Back",
+                  "color": "blue"
+                },
+                {
+                  "value": "9qx7",
+                  "label": "Shoulders",
+                  "color": "gray"
+                },
+                {
+                  "value": "n2Qi",
+                  "label": "Biceps",
+                  "color": "red"
+                },
+                {
+                  "value": "emdL",
+                  "label": "Triceps",
+                  "color": "yellow"
+                },
+                {
+                  "value": "6B9o",
+                  "label": "Quadriceps",
+                  "color": "green"
+                },
+                {
+                  "value": "i45o",
+                  "label": "Hamstrings",
+                  "color": "pink"
+                },
+                {
+                  "value": "1WW4",
+                  "label": "Glutes",
+                  "color": "lime"
+                },
+                {
+                  "value": "kwn8",
+                  "label": "Calves",
+                  "color": "tangerine"
+                },
+                {
+                  "value": "cHdH",
+                  "label": "Abs",
+                  "color": "emerald"
+                },
+                {
+                  "value": "5Fpg",
+                  "label": "Obliques",
+                  "color": "sky"
+                },
+                {
+                  "value": "k711",
+                  "label": "Full Body",
+                  "color": "teal"
+                },
+                {
+                  "value": "7L2H",
+                  "label": "Cardio",
+                  "color": "indigo"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fpEYqhnHZkm",
+          "sdkName": "difficulty",
+          "definition": {
+            "name": "Difficulty",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "pGxN",
+                  "label": "Beginner",
+                  "color": "green"
+                },
+                {
+                  "value": "wvfc",
+                  "label": "Intermediate",
+                  "color": "yellow"
+                },
+                {
+                  "value": "rWhu",
+                  "label": "Advanced",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fvHkv3NaEH5",
+          "sdkName": "equipment",
+          "definition": {
+            "name": "Equipment",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "5MLy",
+                  "label": "No Equipment",
+                  "color": "gray"
+                },
+                {
+                  "value": "grMz",
+                  "label": "Dumbbells",
+                  "color": "blue"
+                },
+                {
+                  "value": "3czE",
+                  "label": "Resistance Bands",
+                  "color": "purple"
+                },
+                {
+                  "value": "wNDd",
+                  "label": "Yoga Mat",
+                  "color": "teal"
+                },
+                {
+                  "value": "6wjv",
+                  "label": "Home Gym",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f76TT6sKW89",
+          "sdkName": "instructions",
+          "definition": {
+            "name": "Instructions",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f7bCYQeCaer",
+          "sdkName": "steps",
+          "definition": {
+            "name": "Steps",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fqmmqaKQeLQ",
+          "sdkName": "defaultSets",
+          "definition": {
+            "name": "Default Sets",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f5VJGDca4wU",
+          "sdkName": "defaultReps",
+          "definition": {
+            "name": "Default Reps",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fvPQ7KfokXy",
+          "sdkName": "defaultDuration",
+          "definition": {
+            "name": "Default Duration",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fd3jAnt8i5G",
+          "sdkName": "restTime",
+          "definition": {
+            "name": "Rest Time",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "ffKLJi8NEdX",
+          "sdkName": "caloriesPerSet",
+          "definition": {
+            "name": "Calories Per Set",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fh811wed2gH",
+          "sdkName": "planExercises",
+          "definition": {
+            "name": "Plan Exercises",
+            "type": "linked_record",
+            "template": {
+              "tableId": "ttfApTyBSg6",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "f3dfddXSrq1"
+            }
+          }
+        },
+        {
+          "id": "f9LYSo7URHj",
+          "sdkName": "exerciseLogs",
+          "definition": {
+            "name": "Exercise Logs",
+            "type": "linked_record",
+            "template": {
+              "tableId": "td27J1zMPrn",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fsJm6JEqR4w"
+            }
+          }
+        },
+        {
+          "id": "fxwsyViJdmP",
+          "sdkName": "favoriteExercises",
+          "definition": {
+            "name": "Favorite Exercises",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tgwp15FK48g",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fqa6ciHSUU8"
+            }
+          }
+        },
+        {
+          "id": "frFDvvi38v9",
+          "sdkName": "videoUrl",
+          "definition": {
+            "name": "Video URL",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "fwrnu9Fd8hn",
+          "sdkName": "image",
+          "definition": {
+            "name": "Image",
+            "type": "url",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7owdLBVzya",
+      "sdkName": "workoutPlans",
+      "name": "Workout Plans",
+      "primaryFieldId": "fmt9Ry8P2vZ",
+      "fields": [
+        {
+          "id": "fmt9Ry8P2vZ",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fdJwB33xrpK",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fbt9yssTT7v",
+          "sdkName": "goal",
+          "definition": {
+            "name": "Goal",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "q6Bm",
+                  "label": "Weight Loss",
+                  "color": "purple"
+                },
+                {
+                  "value": "bR3t",
+                  "label": "Muscle Gain",
+                  "color": "orange"
+                },
+                {
+                  "value": "u2BK",
+                  "label": "Strength",
+                  "color": "blue"
+                },
+                {
+                  "value": "ejXW",
+                  "label": "Endurance",
+                  "color": "gray"
+                },
+                {
+                  "value": "oZvM",
+                  "label": "Flexibility",
+                  "color": "red"
+                },
+                {
+                  "value": "5HE9",
+                  "label": "General Fitness",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f9Dc2cMtesS",
+          "sdkName": "fitnessLevel",
+          "definition": {
+            "name": "Fitness Level",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "ej36",
+                  "label": "Beginner",
+                  "color": "purple"
+                },
+                {
+                  "value": "hqsW",
+                  "label": "Intermediate",
+                  "color": "orange"
+                },
+                {
+                  "value": "2aLM",
+                  "label": "Advanced",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fwfC6s4opPy",
+          "sdkName": "durationMinutes",
+          "definition": {
+            "name": "Duration Minutes",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fmhCiSMuUEe",
+          "sdkName": "equipment",
+          "definition": {
+            "name": "Equipment",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "dHej",
+                  "label": "No Equipment",
+                  "color": "purple"
+                },
+                {
+                  "value": "rVfV",
+                  "label": "Dumbbells",
+                  "color": "orange"
+                },
+                {
+                  "value": "3Nk8",
+                  "label": "Resistance Bands",
+                  "color": "blue"
+                },
+                {
+                  "value": "ptwy",
+                  "label": "Yoga Mat",
+                  "color": "gray"
+                },
+                {
+                  "value": "brTP",
+                  "label": "Home Gym",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fcNQNeBkbcV",
+          "sdkName": "daysPerWeek",
+          "definition": {
+            "name": "Days Per Week",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fiPkkcM5JcR",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f4Jn3aQu3oz",
+          "sdkName": "active",
+          "definition": {
+            "name": "Active",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fjyo4Ajp3nU",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f4BjV5P8pvo",
+          "sdkName": "planExercises",
+          "definition": {
+            "name": "Plan Exercises",
+            "type": "linked_record",
+            "template": {
+              "tableId": "ttfApTyBSg6",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "foQSSBhCuEE"
+            }
+          }
+        },
+        {
+          "id": "f3DjxAsHtGa",
+          "sdkName": "workoutSessions",
+          "definition": {
+            "name": "Workout Sessions",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tt3PUq5MJY5",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fwTeT2CPuj1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ttfApTyBSg6",
+      "sdkName": "planExercises",
+      "name": "Plan Exercises",
+      "primaryFieldId": "fe5ue7pXdc6",
+      "fields": [
+        {
+          "id": "fe5ue7pXdc6",
+          "sdkName": "label",
+          "definition": {
+            "name": "Label",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "foQSSBhCuEE",
+          "sdkName": "plan",
+          "definition": {
+            "name": "Plan",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t7owdLBVzya",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f4BjV5P8pvo"
+            }
+          }
+        },
+        {
+          "id": "f3dfddXSrq1",
+          "sdkName": "exercise",
+          "definition": {
+            "name": "Exercise",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tb6XCLZrJ36",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fh811wed2gH"
+            }
+          }
+        },
+        {
+          "id": "fx3c7WjEiPL",
+          "sdkName": "dayNumber",
+          "definition": {
+            "name": "Day Number",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f7AAec6C9EH",
+          "sdkName": "order",
+          "definition": {
+            "name": "Order",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fcDykSbSQku",
+          "sdkName": "sets",
+          "definition": {
+            "name": "Sets",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "ffD9JnAJmuu",
+          "sdkName": "reps",
+          "definition": {
+            "name": "Reps",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f66M74nKH7c",
+          "sdkName": "durationSeconds",
+          "definition": {
+            "name": "Duration Seconds",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f3x2LSMs67q",
+          "sdkName": "restSeconds",
+          "definition": {
+            "name": "Rest Seconds",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tt3PUq5MJY5",
+      "sdkName": "workoutSessions",
+      "name": "Workout Sessions",
+      "primaryFieldId": "fcnKzGngbof",
+      "fields": [
+        {
+          "id": "fcnKzGngbof",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8nmQcA3TCn",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fwTeT2CPuj1",
+          "sdkName": "plan",
+          "definition": {
+            "name": "Plan",
+            "type": "linked_record",
+            "template": {
+              "tableId": "t7owdLBVzya",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f3DjxAsHtGa"
+            }
+          }
+        },
+        {
+          "id": "ffktfUVGNGx",
+          "sdkName": "date",
+          "definition": {
+            "name": "Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "f6EY6Qu5wWL",
+          "sdkName": "durationMinutes",
+          "definition": {
+            "name": "Duration Minutes",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fp5xA33zn6M",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "anx3",
+                  "label": "In Progress",
+                  "color": "yellow"
+                },
+                {
+                  "value": "fdnt",
+                  "label": "Completed",
+                  "color": "green"
+                },
+                {
+                  "value": "f8xy",
+                  "label": "Skipped",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f8Hx9w9izrf",
+          "sdkName": "caloriesBurned",
+          "definition": {
+            "name": "Calories Burned",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "f4vXHWL5mcP",
+          "sdkName": "totalExercises",
+          "definition": {
+            "name": "Total Exercises",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f1PXSpjfpkz",
+          "sdkName": "totalSets",
+          "definition": {
+            "name": "Total Sets",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fjfpmgHGu5z",
+          "sdkName": "totalReps",
+          "definition": {
+            "name": "Total Reps",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f4dyXw8R7Gp",
+          "sdkName": "completion",
+          "definition": {
+            "name": "Completion",
+            "type": "percent",
+            "template": {
+              "numberFormat": "local",
+              "allowNegative": false,
+              "decimalPlaces": 0,
+              "showProgressBar": false
+            }
+          }
+        },
+        {
+          "id": "f8478EdMuKT",
+          "sdkName": "notes",
+          "definition": {
+            "name": "Notes",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fsSk9VGKTLe",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fwSoMqfR63X",
+          "sdkName": "exerciseLogs",
+          "definition": {
+            "name": "Exercise Logs",
+            "type": "linked_record",
+            "template": {
+              "tableId": "td27J1zMPrn",
+              "isInverse": true,
+              "allowMultiple": true,
+              "inverseFieldId": "fs1ZCufQDr9"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "td27J1zMPrn",
+      "sdkName": "exerciseLogs",
+      "name": "Exercise Logs",
+      "primaryFieldId": "f5p8c8GMSXQ",
+      "fields": [
+        {
+          "id": "f5p8c8GMSXQ",
+          "sdkName": "label",
+          "definition": {
+            "name": "Label",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fs1ZCufQDr9",
+          "sdkName": "session",
+          "definition": {
+            "name": "Session",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tt3PUq5MJY5",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fwSoMqfR63X"
+            }
+          }
+        },
+        {
+          "id": "fsJm6JEqR4w",
+          "sdkName": "exercise",
+          "definition": {
+            "name": "Exercise",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tb6XCLZrJ36",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "f9LYSo7URHj"
+            }
+          }
+        },
+        {
+          "id": "fxkxEexb8gd",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fqbpNxPFovN",
+          "sdkName": "setNumber",
+          "definition": {
+            "name": "Set Number",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f8LJU2eY56H",
+          "sdkName": "reps",
+          "definition": {
+            "name": "Reps",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fkwZaqRTdbz",
+          "sdkName": "weight",
+          "definition": {
+            "name": "Weight",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f5osLVp97Ls",
+          "sdkName": "durationSeconds",
+          "definition": {
+            "name": "Duration Seconds",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fppQCVbyh2r",
+          "sdkName": "restSeconds",
+          "definition": {
+            "name": "Rest Seconds",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f9MVBywdtdC",
+          "sdkName": "calories",
+          "definition": {
+            "name": "Calories",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fuY9eohwkRy",
+          "sdkName": "completed",
+          "definition": {
+            "name": "Completed",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9Mh99RHYJ7",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t75ykWpWMN4",
+      "sdkName": "bmiRecords",
+      "name": "BMI Records",
+      "primaryFieldId": "fi27CD6D59s",
+      "fields": [
+        {
+          "id": "fi27CD6D59s",
+          "sdkName": "date",
+          "definition": {
+            "name": "Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fpXXWbJEu15",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fm7ekXBPpKY",
+          "sdkName": "weight",
+          "definition": {
+            "name": "Weight",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f6REb7xUyAs",
+          "sdkName": "height",
+          "definition": {
+            "name": "Height",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fqVqEvGe15y",
+          "sdkName": "bmiValue",
+          "definition": {
+            "name": "BMI Value",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fjknqpdnedq",
+          "sdkName": "category",
+          "definition": {
+            "name": "Category",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "1oBX",
+                  "label": "Underweight",
+                  "color": "blue"
+                },
+                {
+                  "value": "8kc3",
+                  "label": "Normal",
+                  "color": "green"
+                },
+                {
+                  "value": "5u2T",
+                  "label": "Overweight",
+                  "color": "yellow"
+                },
+                {
+                  "value": "mLsk",
+                  "label": "Obese",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tcLvdhJ7Aoc",
+      "sdkName": "bodyMeasurements",
+      "name": "Body Measurements",
+      "primaryFieldId": "f17YvGAeNTS",
+      "fields": [
+        {
+          "id": "f17YvGAeNTS",
+          "sdkName": "date",
+          "definition": {
+            "name": "Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "f8ZhhwDjCs4",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "ffv6yWeLkZy",
+          "sdkName": "weight",
+          "definition": {
+            "name": "Weight",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fhWUUQRNB1k",
+          "sdkName": "chest",
+          "definition": {
+            "name": "Chest",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fgn4S48zoS9",
+          "sdkName": "waist",
+          "definition": {
+            "name": "Waist",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f78sMrCaMUs",
+          "sdkName": "arms",
+          "definition": {
+            "name": "Arms",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "ftKGn5C26jA",
+          "sdkName": "hips",
+          "definition": {
+            "name": "Hips",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "fmAd6UafRGg",
+          "sdkName": "thighs",
+          "definition": {
+            "name": "Thighs",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tvADRg3YBrV",
+      "sdkName": "fitnessGoals",
+      "name": "Fitness Goals",
+      "primaryFieldId": "femKWWNd5ge",
+      "fields": [
+        {
+          "id": "femKWWNd5ge",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fuSNX2mBriv",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fweo2gqZMvp",
+          "sdkName": "type",
+          "definition": {
+            "name": "Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "kh12",
+                  "label": "Weight Target",
+                  "color": "purple"
+                },
+                {
+                  "value": "ox7G",
+                  "label": "Workout Count",
+                  "color": "orange"
+                },
+                {
+                  "value": "pVay",
+                  "label": "Weekly Frequency",
+                  "color": "blue"
+                },
+                {
+                  "value": "cCXg",
+                  "label": "Strength",
+                  "color": "gray"
+                },
+                {
+                  "value": "1aXw",
+                  "label": "Custom",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f5hgpBAjqgW",
+          "sdkName": "targetValue",
+          "definition": {
+            "name": "Target Value",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f1aYQ4EV6WS",
+          "sdkName": "currentValue",
+          "definition": {
+            "name": "Current Value",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 1
+            }
+          }
+        },
+        {
+          "id": "f4etYKA6bFU",
+          "sdkName": "unit",
+          "definition": {
+            "name": "Unit",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fa7XLAp4gAi",
+          "sdkName": "deadline",
+          "definition": {
+            "name": "Deadline",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fdm7vYLmZtL",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "qe4b",
+                  "label": "Active",
+                  "color": "blue"
+                },
+                {
+                  "value": "2Dj6",
+                  "label": "Completed",
+                  "color": "green"
+                },
+                {
+                  "value": "2Lvx",
+                  "label": "Paused",
+                  "color": "yellow"
+                },
+                {
+                  "value": "kKCQ",
+                  "label": "Cancelled",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fid89ZwXgjd",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "trZKqCEUUSR",
+      "sdkName": "userAchievements",
+      "name": "User Achievements",
+      "primaryFieldId": "fqUV6DHvPPN",
+      "fields": [
+        {
+          "id": "fqUV6DHvPPN",
+          "sdkName": "achievementKey",
+          "definition": {
+            "name": "Achievement Key",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fxgy2BrKWaJ",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "f5bUvRwvLZt",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "faUWjX68CZE",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "faiwi41CKh3",
+          "sdkName": "icon",
+          "definition": {
+            "name": "Icon",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fhK2BKFzMht",
+          "sdkName": "unlockedDate",
+          "definition": {
+            "name": "Unlocked Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t8LYccYoHro",
+      "sdkName": "reminders",
+      "name": "Reminders",
+      "primaryFieldId": "f3yh3iu1Get",
+      "fields": [
+        {
+          "id": "f3yh3iu1Get",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fh8RGYEw87m",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fbcEBKDQh1x",
+          "sdkName": "time",
+          "definition": {
+            "name": "Time",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8KXpNnBP97",
+          "sdkName": "days",
+          "definition": {
+            "name": "Days",
+            "type": "multiple_select",
+            "template": {
+              "options": [
+                {
+                  "value": "ivst",
+                  "label": "Monday",
+                  "color": "purple"
+                },
+                {
+                  "value": "1xrK",
+                  "label": "Tuesday",
+                  "color": "orange"
+                },
+                {
+                  "value": "vhPe",
+                  "label": "Wednesday",
+                  "color": "blue"
+                },
+                {
+                  "value": "pKgM",
+                  "label": "Thursday",
+                  "color": "gray"
+                },
+                {
+                  "value": "qXuZ",
+                  "label": "Friday",
+                  "color": "red"
+                },
+                {
+                  "value": "h5rE",
+                  "label": "Saturday",
+                  "color": "yellow"
+                },
+                {
+                  "value": "wNeu",
+                  "label": "Sunday",
+                  "color": "green"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f5ttDY4vrdr",
+          "sdkName": "active",
+          "definition": {
+            "name": "Active",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fnhuWXLoMKm",
+          "sdkName": "createdAt",
+          "definition": {
+            "name": "Created At",
+            "type": "created_at",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tgwp15FK48g",
+      "sdkName": "favoriteExercises",
+      "name": "Favorite Exercises",
+      "primaryFieldId": "faEYj24ksyf",
+      "fields": [
+        {
+          "id": "faEYj24ksyf",
+          "sdkName": "label",
+          "definition": {
+            "name": "Label",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fqbraJBU2w5",
+          "sdkName": "user",
+          "definition": {
+            "name": "User",
+            "type": "user",
+            "template": {
+              "internalOnly": false,
+              "allowMultiple": false,
+              "deleteRowWhenUserDeleted": false
+            }
+          }
+        },
+        {
+          "id": "fqa6ciHSUU8",
+          "sdkName": "exercise",
+          "definition": {
+            "name": "Exercise",
+            "type": "linked_record",
+            "template": {
+              "tableId": "tb6XCLZrJ36",
+              "isInverse": false,
+              "allowMultiple": true,
+              "inverseFieldId": "fxwsyViJdmP"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
