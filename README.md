@@ -1,5 +1,6 @@
 # Home Workout Tracker — Render edition
 
+> **FitTracker Mono** is the simplified, browser-only edition on this branch. See the [Mono setup and Render instructions](mono/README.md). The rest of this README describes the original edition.
 This is a standalone conversion of the source in **Home Workout Tracker1.json**. The exported landing page and 15 application screens now use the approved white, black, and red theme while retaining their text, data, charts, and workout functionality. The application is branded **FitTracker** in the original source.
 
 ## Included

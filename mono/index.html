@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple, private home workout log. Pick a routine, log your sets, and track your progress.">
+  <title>FitTracker Mono</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <header class="top"><div class="shell top-inner">
+    <a class="brand" href="#today"><span class="brand-mark" aria-hidden="true">FT</span> FITTRACKER <span class="edition">MONO</span></a>
+    <nav aria-label="Main navigation"><a href="#today">Today</a><a href="#workout">Workout</a><a href="#exercises">Exercises</a><a href="#history">History</a></nav>
+  </div></header>
+  <main class="shell">
+    <noscript>Enable JavaScript to log and save workouts.</noscript>
+    <p id="notice" role="status" hidden></p>
+    <section id="today" hidden>
+      <div class="hero">
+        <div><p class="eyebrow" id="today-date"></p><h1>Train at<br>your pace.</h1>
+        <p class="hero-copy">Pick a routine, log your sets, and see what you did this week.</p>
+        <a class="button primary" href="#workout" id="hero-action">Log a workout <span aria-hidden="true">↗</span></a></div>
+        <svg class="hero-art" viewBox="0 0 460 290" aria-hidden="true">
+          <defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#424242"/></pattern></defs>
+          <rect x="1" y="1" width="458" height="288" fill="url(#grid)" stroke="#555"/>
+          <circle cx="230" cy="145" r="102" fill="none" stroke="#777" stroke-dasharray="3 6"/>
+          <g transform="rotate(-25 230 145)" stroke="#eee" stroke-width="3" fill="#171717">
+            <path d="M58 135h344v20H58z"/>
+            <rect x="103" y="102" width="31" height="86" rx="7"/><rect x="135" y="83" width="38" height="124" rx="8"/>
+            <rect x="287" y="83" width="38" height="124" rx="8"/><rect x="326" y="102" width="31" height="86" rx="7"/>
+            <path d="M199 137l-10 16m27-16-10 16m27-16-10 16m27-16-10 16m27-16-10 16" stroke="#aaa"/>
+          </g>
+          <path d="M13 33V13h20m394 0h20v20M13 257v20h20m394 0h20v-20" fill="none" stroke="#eee"/>
+        </svg>
+      </div>
+      <div class="stats" id="stats" aria-label="This week's activity"></div>
+      <div class="section-title"><div><p class="eyebrow">01 / QUICK START</p><h2>Choose a routine</h2></div></div>
+      <div id="routines" class="cards"></div>
+    </section>
+    <section id="workout" hidden>
+      <p class="eyebrow">02 / TRAINING LOG</p><h1>Log workout</h1>
+      <p class="lead">Record the sets you completed. Adjust the numbers to match your session.</p>
+      <form id="workout-form" class="panel">
+        <label for="workout-name">Workout name</label>
+        <input id="workout-name" required maxlength="60" placeholder="e.g. Full Body">
+        <div class="section-title"><h2>Exercises</h2></div>
+        <div id="rows"></div>
+        <div class="picker">
+          <div><label for="exercise-picker">Choose an exercise</label><select id="exercise-picker"></select></div>
+          <button type="button" id="add-exercise">Add exercise</button>
+        </div>
+        <div class="form-footer"><button class="primary" type="submit">Save workout</button><button type="button" id="discard">Clear draft</button></div>
+      </form>
+    </section>
+    <section id="exercises" hidden>
+      <p class="eyebrow">03 / FORM GUIDE</p><h1>Exercise library</h1>
+      <p class="lead">Bodyweight exercises with short instructions and optional demos.</p>
+      <div class="filter"><label for="search">Find an exercise</label><input id="search" type="search" placeholder="Try plank or legs"></div>
+      <div class="cards" id="library"></div>
+    </section>
+    <section id="history" hidden>
+      <p class="eyebrow">04 / YOUR ACTIVITY</p><h1>Workout history</h1>
+      <p class="lead">Review your past sessions and keep a backup of your log.</p>
+      <div class="stats" id="history-stats"></div>
+      <div id="sessions"></div>
+      <div class="panel backup">
+        <div><h2>Back up your log</h2><p class="muted">Workouts are saved in this browser. Import merges a backup with your current log.</p></div>
+        <div class="form-footer"><button type="button" id="export">Export backup</button><button type="button" id="import">Import backup</button><input type="file" id="backup-file" accept=".json,application/json" hidden></div>
+      </div>
+    </section>
+  </main>
+  <footer class="shell footer"><span>FITTRACKER / MONO</span><span>Saved in this browser</span></footer>
+</body>
+</html>
